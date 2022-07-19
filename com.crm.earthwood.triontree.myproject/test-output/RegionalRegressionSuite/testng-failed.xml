@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RegionalRegressionSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.cmr.erthwood.organizationsTest.OrganizationsTest">
+        <methods>
+          <include name="logoutVtiger"/>
+          <include name="creteOrgnition"/>
+          <include name="closeDB"/>
+          <include name="launchCrssBrowser"/>
+          <include name="connectToDB"/>
+          <include name="closeBrowser"/>
+          <include name="loginToVtiger"/>
+        </methods>
+      </class> <!-- com.cmr.erthwood.organizationsTest.OrganizationsTest -->
+      <class name="com.crm.erthwood.campaignsTest.CampaignsTest">
+        <methods>
+          <include name="logoutVtiger"/>
+          <include name="closeDB"/>
+          <include name="launchCrssBrowser"/>
+          <include name="connectToDB"/>
+          <include name="closeBrowser"/>
+          <include name="loginToVtiger"/>
+          <include name="createProductsCampaignTest"/>
+        </methods>
+      </class> <!-- com.crm.erthwood.campaignsTest.CampaignsTest -->
+      <class name="com.crm.erthwood.contactsTest.ContactsTest">
+        <methods>
+          <include name="logoutVtiger"/>
+          <include name="closeDB"/>
+          <include name="launchCrssBrowser"/>
+          <include name="connectToDB"/>
+          <include name="closeBrowser"/>
+          <include name="loginToVtiger"/>
+          <include name="createContactTest"/>
+        </methods>
+      </class> <!-- com.crm.erthwood.contactsTest.ContactsTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [RegionalRegressionSuite] -->
