@@ -36,7 +36,9 @@ public class BaseClass
 	public void launchBrowser() throws Throwable
 	{
 		wLib= new WebDriverUtility();
-		driver=wLib.launchBrowser(fLib.getPropertyKeyValue("browser"));
+		String browser=System.getProperty("Browser");
+//		String browser=fLib.getPropertyKeyValue("browser");
+		driver=wLib.launchBrowser(browser);
 		listenerDriver = driver;
 	}
 //	@Parameters("browserName")
